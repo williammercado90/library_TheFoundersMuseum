@@ -10,42 +10,20 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      flex-direction: column;
     }
-    iframe {
+    video {
       width: 80%;
-      height: 80%;
+      height: auto;
       max-width: 1280px;
       max-height: 720px;
-      border: none;
-    }
-    #playButton {
-      color: white;
-      font-size: 24px;
-      margin-top: 20px;
-      cursor: pointer;
-      user-select: none;
+      outline: none;
     }
   </style>
 </head>
 <body>
-  <iframe 
-    id="videoFrame"
-    src="https://www.youtube.com/embed/xPzmuYxMRO0?list=PLRJNAhZxtqH99hqxdt1lIkZT8_TvNkZft" 
-    allow="autoplay; encrypted-media; fullscreen" 
-    allowfullscreen>
-  </iframe>
-  <div id="playButton">Click to Play with Sound</div>
-
-  <script>
-    const playButton = document.getElementById('playButton');
-    const iframe = document.getElementById('videoFrame');
-
-    playButton.addEventListener('click', () => {
-      // Reload iframe with autoplay unmuted
-      iframe.src = "https://www.youtube.com/embed/xPzmuYxMRO0?list=PLRJNAhZxtqH99hqxdt1lIkZT8_TvNkZft&autoplay=1";
-      playButton.style.display = 'none';
-    });
-  </script>
+  <video autoplay controls>
+    <source src="thomas-jefferson.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
 </body>
 </html>
