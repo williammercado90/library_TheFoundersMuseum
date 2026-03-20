@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto-play YouTube Video</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* full viewport height */
+    }
+
+    iframe {
+      width: 80%;   /* make it bigger, adjust as needed */
+      height: 80%;  /* make it bigger, adjust as needed */
+      max-width: 1280px;  /* optional: maximum width */
+      max-height: 720px;  /* optional: maximum height */
+    }
+  </style>
+</head>
+<body>
+  <iframe 
+    src="https://www.youtube.com/embed/xPzmuYxMRO0?list=PLRJNAhZxtqH99hqxdt1lIkZT8_TvNkZft&autoplay=1" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+</body>
+</html>
